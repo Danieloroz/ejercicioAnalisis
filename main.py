@@ -8,7 +8,7 @@ def volumen_tanque(h, R):
 
 def newton_raphson(R, volumen_objetivo, h_inicial, tolerancia=0.003/100, max_iteraciones=100):
     """
-    Método de Newton-Raphson con registro de convergencia
+    Metodo de Newton-Raphson con registro de convergencia
 
     Retorna:
     - Altura final
@@ -63,7 +63,7 @@ def newton_raphson(R, volumen_objetivo, h_inicial, tolerancia=0.003/100, max_ite
 
 def secante(R, volumen_objetivo, h0, h1, tolerancia=0.003/100, max_iteraciones=100):
     """
-    Método de la Secante con registro de convergencia
+    Metodo de la Secante con registro de convergencia
 
     Retorna:
     - Altura final
@@ -190,7 +190,7 @@ print(f"Altura: {altura_nr:.4f} m")
 print(f"Iteraciones: {resultado_nr[3]}")
 print(f"Volumen calculado: {volumen_tanque(altura_nr, R):.4f} m³")
 
-# Resolver con Método de la Secante
+# Resolver con Metodo de la Secante
 resultado_secante = secante(R, volumen_objetivo, h0=1, h1=2)
 altura_secante = resultado_secante[0]
 print("\nMétodo de la Secante:")
